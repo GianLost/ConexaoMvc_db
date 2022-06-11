@@ -1,0 +1,36 @@
+CREATE DATABASE AgTurismo;
+
+CREATE TABLE Usuario(
+		Id int(11) AUTO_INCREMENT,
+    Nome varchar(200),
+    Login varchar(40),
+    Senha varchar(40),
+    DataNascimento datetime,
+    PRIMARY KEY (Id)
+);
+
+CREATE TABLE PacotesTuristicos(
+		Id int(11) AUTO_INCREMENT,
+    Nome varchar(200),
+    Origem varchar(100),
+    Destino varchar(100),
+    Atrativos varchar (100),
+    Saida datetime,
+    Retorno datetime,
+    Usuario int(11),
+    PRIMARY KEY(Id),
+    FOREIGN KEY (Usuario) REFERENCES Usuario(Id)
+);
+
+INSERT INTO Usuario (Nome,Login,Senha,DataNascimento) VALUES('Gian','GianLost','123456','1999-11-06');
+INSERT INTO Usuario (Nome,Login,Senha,DataNascimento) VALUES('Carol','Carol123','0123','1940-02-15');
+INSERT INTO Usuario (Nome,Login,Senha,DataNascimento) VALUES('Rafael','RafaelABC','4444','1982-10-25');
+INSERT INTO Usuario (Nome,Login,Senha,DataNascimento) VALUES('Amilton','AmiltonComA','221405','1991-07-13');
+INSERT INTO Usuario (Nome,Login,Senha,DataNascimento) VALUES('Laura','Laurinha','202022','1998-12-30')
+
+
+INSERT INTO PacotesTuristicos (Nome,Origem,Destino,Atrativos,Saida,Retorno,Usuario) VALUES('Lua de mel em Paris','Rio de Janeiro','Paris','Apreciação da cultura e culinária local com passeios turisticos pelos principais pontos', '2022-03-01', '2022-04-01',1);
+INSERT INTO PacotesTuristicos (Nome,Origem,Destino,Atrativos,Saida,Retorno,Usuario) VALUES('Férias em Dubai','São Paulo','Duabai','Andar de carro esportivo com os Sheiks', '2022-06-04', '2022-07-04',4);
+INSERT INTO PacotesTuristicos (Nome,Origem,Destino,Atrativos,Saida,Retorno,Usuario) VALUES('Natal em Miami','Guarulhos','Miami','Cruzeiros pelo oceano e surf a vontade', '2022-12-25', '2023-01-14',3);
+INSERT INTO PacotesTuristicos (Nome,Origem,Destino,Atrativos,Saida,Retorno,Usuario) VALUES('Temporada em Machu Picchu','Santa Catarina','Machu Picchu','Passeio pelas ruínas do império Inca', '2022-03-04', '2022-04-04',5);
+INSERT INTO PacotesTuristicos (Nome,Origem,Destino,Atrativos,Saida,Retorno,Usuario) VALUES('Temporada no Grand Canyon','Curitiba','Arizona','Camping de turistas no grand canyon, e caminhadas ecologicas', '2022-06-21', '2022-07-25',2)

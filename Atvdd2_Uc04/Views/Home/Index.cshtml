@@ -1,0 +1,296 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        font-family: sans-serif;
+        position: absolute;
+    }
+
+    body {
+        background: url('../imagens/fundo.jpg') repeat center center;
+        /* */
+        background-size: cover;
+        color: #fff;
+    }
+
+    .cont {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow: inherit;
+        align-items: center;
+        padding: 150px;
+
+    }
+
+    .Th1 {
+
+        margin: 10px;
+        margin-left: 80px;
+        width: 280px;
+        height: 28px;
+        background-color: #AB0AC7;
+        display: flex;
+
+    }
+
+    .Th1 h1 {
+        margin-top: -2px;
+        margin-left: 90px;
+        font-size: 54px;
+        font-weight: bold;
+    }
+
+
+    .pacoteviagem {
+        flex-shrink: 0;
+        width: 360px;
+        height: 480px;
+        border-radius: 20px;
+        border: 10px #AB0AC7;
+        box-shadow: 0 0 99px 0 rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #7AA7C6;
+        padding: 30px;
+        font-size: 10px;
+        margin-left: -170px;
+        margin-top: 10px;
+        transition: 0.9s;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .imgpacote img {
+        width: 140px;
+        height: 140px;
+        border-radius: 20px;
+        background-color: black;
+    }
+
+    img {
+
+        margin-left: 80px;
+    }
+
+    .descricao {
+
+        width: 320px;
+        height: 110px;
+        text-align: center;
+        background-color: #1766D6;
+        opacity: 88%;
+        justify-content: space-between;
+        border-radius: 20px;
+        box-shadow: 3 3 99px 3 (#7AA7C6);
+    }
+
+    .descricao p {
+        margin-top: 12px;
+        color: #D9D2DD;
+        font-weight: bold;
+    }
+
+    p {
+        font-weight: bold;
+        text-align: center;
+        
+        color: #D9D2DD;
+    }
+
+    .pacoteviagem:hover {
+        transform: translateY(-20px);
+        margin-right: 120px;
+        box-shadow: 0 0 99px 0 rgba(0, 0, 0, 1);
+        border: 10px #AB0AC7;
+        cursor: pointer;
+    }
+
+    .botao {
+        margin: auto;
+        width: 100px;
+    }
+
+    input {
+        align-items: center;
+        width: 100px;
+        height: 30px;
+        background: #1766D6;
+        font-size: 12px bold;
+        color: #fff;
+        border: none;
+    }
+
+    .botao input:hover {
+        cursor: pointer;
+        color: #D9D2DD;
+        transform: translateY(8px);
+    }
+</style>
+
+<div class="Th1">
+    <h1>Travel Line Turismo</h1>
+</div>
+
+<div class="cont">
+
+    <div class="pacoteviagem">
+
+        <h2>Lua de Mel em Paris</h2>
+
+        <br>
+
+        <div class="imgpacote">
+            <img width="100px" height="100px" src="~/imagens/Paris.jpg" alt="Paris">
+        </div>
+
+        <br>
+
+        <div class="descricao">
+            <p>Aprecie a linda Paris na companhia de quem você mais gosta.
+                Preços e condicões especiais para você e seu parceiro desfrutarem de uma viagem inesquecivel. Conheça
+                novas
+                paisagens, museus, e
+                uma cultura única. Não perca essa oportunidade, faça agora mesmo a compra do seu pacote e aproveite
+                condições especiais.</p>
+        </div>
+
+        <div class="valorpacote">
+            <p><b>R$ 2.300,00</b> Com hospedagem e guia turístico incluso</p>
+            <p><b>Ou até 12x de R$230,00</b> No Cartão de crédito</p>
+        </div>
+
+        <div class="botao">
+            <input type="submit" value="Comprar">
+        </div>
+
+    </div>
+
+    <div class="pacoteviagem">
+
+        <h2>Tour Machu Pitcchu </h2>
+
+        <br>
+
+        <div class="imgpacote">
+            <img width="100px" height="100px" src="~/imagens/machu.jpg" alt="Paris">
+        </div>
+
+        <br>
+
+        <div class="descricao">
+            <p>Participe de trilhas, escaladas, e travessias por rotas e caminhos da antiga sociedade Inca,
+                veja de perto as ruínas e a história do que um dia já foi uma das mais incríveis civilizações
+                já existente. Adiquira já o seu pacote
+            </p>
+        </div>
+
+        <div class="valorpacote">
+            <p><b>R$ 1.800,00</b> Com hospedagem, guia turístico incluso, <b>condicões especiais para estudantes</b></p>
+            <p><b>Ou até 12x de R$180,00</b> No Cartão de crédito</p>
+        </div>
+
+        <div class="botao">
+            <input type="submit" value="Comprar">
+        </div>
+
+    </div>
+
+
+    <div class="pacoteviagem">
+
+        <h2>Tour Grand Canyon</h2>
+
+        <br>
+
+        <div class="imgpacote">
+            <img width="100px" height="100px" src="~/imagens/canyon.jpg" alt="Paris">
+        </div>
+
+        <br>
+
+        <div class="descricao">
+            <p>Venha conhecer uma das maravilhas do Arizona. Um cartão postal para os
+                amantes das paisagens e da adrenalina, desfrute de atividades como caminhadas e trilhas
+                além de um camping completamente preparado para você. Uma aventura que você não pode
+                ficar de fora.
+            </p>
+        </div>
+
+        <div class="valorpacote">
+            <p><b>R$ 2.100,00</b> Camping e guias de trilha incluso</p>
+            <p><b>Ou até 12x de R$210,00</b> No Cartão de crédito</p>
+        </div>
+
+        <div class="botao">
+            <input type="submit" value="Comprar">
+        </div>
+
+    </div>
+
+    <div class="pacoteviagem">
+
+        <h2>Férias no Caribe</h2>
+
+        <br>
+
+        <div class="imgpacote">
+            <img width="100px" height="100px" src="~/imagens/caribe.jpg" alt="Paris">
+        </div>
+
+        <br>
+
+        <div class="descricao">
+            <p>Não perca a oportunidade de conhecer uma das praias mais paradisíacas do planeta. Venha repousar seu corpo
+                e alma em um ambiente completamente utópico com paisagens surreais. Aproveite o melhor serviço de hospedagem
+                da região e saboreie uma culinária ímpar, com sabores exóticos e únicos.
+            </p>
+        </div>
+
+        <div class="valorpacote">
+            <p><b>R$ 4.200,00</b> Com hospedagem e guia turístico incluso</p>
+            <p><b>Ou até 12x de R$420,00</b> No Cartão de crédito</p>
+        </div>
+
+        <div class="botao">
+            <input type="submit" value="Comprar">
+        </div>
+
+    </div>
+
+
+    <div class="pacoteviagem">
+
+        <h2>Férias em Dubai</h2>
+
+        <br>
+
+        <div class="imgpacote">
+            <img width="100px" height="100px" src="~/imagens/dub.jpg" alt="Paris">
+        </div>
+
+        <br>
+
+        <div class="descricao">
+            <p>Quem nunca sonhou em visitar a cidade do futuro? A hora chegou, aproveite nossos pacotes e embarque em uma viagemdo
+                dos sonhos, conheça locais unicos,e curiosidades que nunca encontrará em nenhum outro lugar do mundo. A terra da riqueza
+                e da promissão te aguarda com uma cultura incrível em um lugar inimaginável. 
+            </p>
+        </div>
+
+        <div class="valorpacote">
+            <p><b>R$ 4.800,00</b> Com hospedagem e guia turístico incluso</p>
+            <p><b>Ou até 12x de R$480,00</b> No Cartão de crédito</p>
+        </div>
+
+        <div class="botao">
+            <input type="submit" value="Comprar">
+        </div>
+
+    </div>
+</div>
